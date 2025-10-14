@@ -1,0 +1,13 @@
+first_name = input()
+last_name = input()
+age = int(input())
+gender = input()
+uid = input()
+user_id = input()
+
+print(f'First name: {first_name}')
+print(f'Last name: {last_name}')
+print(f'Age: {age}')
+print(f'Gender: {gender}')
+print(f'Personal ID: {uid}')
+print(f'Unique Employee number: {user_id}')
