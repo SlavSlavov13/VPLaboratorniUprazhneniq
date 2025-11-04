@@ -14,12 +14,14 @@ def divide(a: int, b: int) -> int:
 
 def int_calculator(a: int, b: int, operator: str) -> None:
 	if operator == "+":
-		print(add(a, b))
+		result = add(a, b)
 	elif operator == "-":
-		print(subtract(a, b))
+		result = subtract(a, b)
 	elif operator == "*":
-		print(multiply(a, b))
+		result = multiply(a, b)
 	elif operator == "/":
-		print(divide(a, b))
+		result = divide(a, b)
 	else:
 		raise ValueError("Unknown operator")
+
+	print(result)
