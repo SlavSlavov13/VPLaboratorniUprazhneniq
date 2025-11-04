@@ -12,14 +12,14 @@ def divide(a: int, b: int) -> int:
 		raise ValueError("Division by zero is not allowed.")
 	return a // b
 
-def int_calculator(a: int, b: int, operator: str) -> float:
+def int_calculator(a: int, b: int, operator: str) -> None:
 	if operator == "+":
-		return add(a, b)
+		print(add(a, b))
 	elif operator == "-":
-		return subtract(a, b)
+		print(subtract(a, b))
 	elif operator == "*":
-		return multiply(a, b)
+		print(multiply(a, b))
 	elif operator == "/":
-		return divide(a, b)
+		print(divide(a, b))
 	else:
 		raise ValueError("Unknown operator")
