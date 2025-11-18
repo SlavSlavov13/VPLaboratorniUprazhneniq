@@ -1,3 +1,6 @@
+import math
+
+
 class Shape:
 	def area(self):
 		raise NotImplementedError("Method not implemented")
@@ -14,7 +17,7 @@ class Circle(Shape):
 		self.radius = radius
 
 	def area(self):
-		return 3.14 * self.radius * self.radius
+		return math.pi * self.radius * self.radius
 
 def total_area(shapes):
 	total = 0
